@@ -1,10 +1,16 @@
+    
     function getWeather() {
+       
         const apiKey = 'f7dbac60cb96e5055c4e3c248ee82820';
         const city = document.getElementById('city').value.trim(); 
+
+        console.log("API Succesfully Fetched");
 
         if (!city) {
             alert('Please enter a city');
             return; 
+        }else{
+        alert(`Your are Entered : ${city}`)
         }
 
         const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
