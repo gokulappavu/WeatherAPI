@@ -83,16 +83,54 @@ button:hover {
     align-items: center;
     margin-right: 10px;
     color: white;
-    img {
-        width: 30px;
-        height: 30px;
-        margin-bottom: 5px;
-    }
-    
 }
 
-.hourly-item 
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
 #hourly-heading {
     color: #fff;
     margin-top: 10px;
+}
+
+/* History container styling */
+#history-container {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#history-container h3 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#history-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-container li {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#history-container li:hover {
+    background: rgba(255, 255, 255, 0.8);
 }
